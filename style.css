@@ -79,10 +79,14 @@
   text-align: center;
 }
 #services-container {
-  width: 90%;
+  width: 86%;
 }
 .services-container ul li{
   float:none;
+  text-align: center;
+  width:
+}
+.services-container ul li a {
   text-align: center;
 }
 }
@@ -217,7 +221,7 @@
   height:auto;
   position: relative;
   margin:10px auto;
-  width: 946px;
+  width: 1100px;
 }
   .cont-header {
     text-align: center;
@@ -238,7 +242,7 @@
     .services-container ul li {
       list-style:none;
       float:left;
-      padding: 40px 20px 100px 0px;
+      padding: 40px 20px 100px 20px;
       width:200px;
       height: 120px;
       text-align: center;
@@ -248,6 +252,8 @@
         text-decoration: none;
         color:#666;
         flex-wrap: wrap;
+        text-align: center;
+        justify-content: space-around;
       }
 
   .service-cont {
