@@ -5,19 +5,22 @@
       <title>  </title>
       <link rel="stylesheet" type="text/css" href="style.css">
       <script type='text/javascript' src='script.js'></script>
+      <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
     <main>
-      <div class="first-section">
+      <div class="first-section" id="top">
         <div class="first-section-picture">
         </div>
         <div class="nav">
           <ul class="nav-list">
-              <li class="nav-item"><a href="#">team</a></li>
-              <li class="nav-item"><a href="#">mission</a></li>
-              <li class="nav-item"><a href="#">services</a></li>
-              <li class="nav-item"><a href="#">main</a></li>
+            <li class="nav-item"><a     href="#pricing">pricing</a></li>
+              <li class="nav-item"><a href="#portfolio">portfolio</a></li>
+              <li class="nav-item"><a href="#team">team</a></li>
+              <li class="nav-item"><a href="#services-container">services</a></li>
+              <li class="nav-item"><a href="#mission">mission</a></li>
+              <li class="nav-item"><a href="#top">main</a></li>
               <li class="nav-item"><span id="burger">☰</span></li>
           </ul>
         </div>
@@ -32,7 +35,7 @@
         </div>
       </div>
       </div>
-  <div class="whyUs">
+  <div class="whyUs" id="mission">
     <div class="whyUs-copy">
       <h1> Why choose us?</h1>
     </div>
@@ -116,7 +119,7 @@
   </ul>
 
 </div>
-  <div class="team-flex-container">
+  <div class="team-flex-container" id="team">
     <h1 class="cont-header">our <span class="coloremp">team</span></h1>
     <div class="team-flex-item">
       <img class="portrait" src="img/portrait1.jpg" alt="">
@@ -141,7 +144,7 @@
     </div>
   </div>
 <!---Nav bar for gallery start --->
-  <div class="sortable-cont">
+  <div class="sortable-cont" id="portfolio">
     <h1 class="cont-header">our <span class="coloremp">portfolio</span></h1>
     <div class="gal-nav">
     <ul>
@@ -185,7 +188,7 @@
   <!---Gallery stop --->
   </div>
 
-  <div class="pricing-container">
+  <div class="pricing-container" id="pricing">
     <div class="pricing">
           <div class="pr-top">
             <p>Basic</p>
