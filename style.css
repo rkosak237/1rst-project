@@ -79,12 +79,11 @@
   text-align: center;
 }
 #services-container {
-  width: 86%;
+  width: 82%;
 }
 .services-container ul li{
   float:none;
   text-align: center;
-  width:
 }
 .services-container ul li a {
   text-align: center;
@@ -101,7 +100,7 @@
     display: block;
   }
   #services-container {
-    width: 480px;
+    width: 550px;
   }
 }
 @media (min-width:863px) {
@@ -221,7 +220,7 @@
   height:auto;
   position: relative;
   margin:10px auto;
-  width: 1100px;
+  width: 964px;
 }
   .cont-header {
     text-align: center;
@@ -242,7 +241,7 @@
     .services-container ul li {
       list-style:none;
       float:left;
-      padding: 40px 20px 100px 20px;
+      padding: 40px 20px 100px 0px;
       width:200px;
       height: 120px;
       text-align: center;
@@ -397,6 +396,7 @@
     width: 300px;
     margin-top: 1%;
     margin-bottom: 1%;
+    padding-bottom: 90px;
   }
     .pr-top {
       text-align: center;
@@ -415,11 +415,14 @@
       }
     .pr-inside {
       text-align: center;
-      height:25%;
+      height:60%;
       width: 70%;
       margin: 0 auto;
       word-wrap: normal;
     }
+      .pr-inside p {
+        font-size: 100%;
+      }
     .pr-bottom {
        text-align: center;
     }
