@@ -42,6 +42,24 @@
     transition-duration: 0.5s;
     font-weight: bold;
   }
+  #goTop {
+    background: #00bc8d;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    line-height: 55px;
+    position: fixed;
+    bottom: 1%;
+    right:1%;
+    z-index: 1;
+    text-align: center;
+    text-decoration: none;
+    font-size:200%;
+    color:#fff;
+    transform: rotate(-90deg);
+    padding: 5px;
+
+  }
       .nav-item:first-child {
         padding: 0px 40px 0px 0px;
       }
@@ -168,6 +186,8 @@
        border: 5px 100px 40px 25px;
        background-color:#00bc8d;
        opacity: 0.7;
+       margin:15px;
+
     }
       .button-middle:hover {
          opacity: 1;
@@ -177,8 +197,7 @@
 /*mission - vission - why us? */
 .whyUs {
   padding: 50px 0 100px 0;
-  max-height: 85vh;
-  margin-top: 0;
+  height: 100vh;
   width: auto;
   overflow: hidden;
   margin-left: auto;
@@ -217,7 +236,7 @@
 /*containter with services- icons */
 .services-container {
   background-color: #ffffff;
-  height:auto;
+  height:100vh;
   position: relative;
   margin:10px auto;
   width: 964px;
@@ -269,7 +288,7 @@
   background-color: #fff;
   position: relative;
   padding: 40px 0px 10px 0px;
-  height: auto;
+  height: 100vh;
   width: 90%;
   display: flex;
   flex-wrap: wrap;

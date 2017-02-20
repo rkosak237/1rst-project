@@ -4,8 +4,7 @@
       <meta charset="utf-8">
       <title>  </title>
       <link rel="stylesheet" type="text/css" href="style.css">
-      <script type='text/javascript' src='script.js'></script>
-      <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+      <script src="script.js"></script>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
@@ -15,14 +14,15 @@
         </div>
         <div class="nav">
           <ul class="nav-list">
-            <li class="nav-item"><a     href="#pricing">pricing</a></li>
-              <li class="nav-item"><a href="#portfolio">portfolio</a></li>
-              <li class="nav-item"><a href="#team">team</a></li>
-              <li class="nav-item"><a href="#services-container">services</a></li>
-              <li class="nav-item"><a href="#mission">mission</a></li>
-              <li class="nav-item"><a href="#top">main</a></li>
+            <li class="nav-item"><a onclick="initScroll('pricing'); return false;" href="#">pricing</a></li>
+              <li class="nav-item"><a onclick="initScroll('portfolio'); return false;" href="#">portfolio</a></li>
+              <li class="nav-item"><a onclick="initScroll('team'); return false;" href="#">team</a></li>
+              <li class="nav-item"><a onclick="initScroll('services-container'); return false;" href="#">services</a></li>
+              <li class="nav-item"><a onclick="initScroll('mission'); return false;" href="#">mission</a></li>
+              <li class="nav-item"><a onclick="initScroll('top'); return false;" href="#">main</a></li>
               <li class="nav-item"><span id="burger">☰</span></li>
           </ul>
+              <a id="goTop" onclick="goTop(); return false;" href="#">></a>
         </div>
         <div class="middle">
         <div class="middle-cont">
@@ -194,7 +194,9 @@
             <p>Basic</p>
           </div>
           <div class="pr-inside">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
           </div>
           <div class="pr-bottom">
             <a class="button-middle" href="#">Purchase!</a>
