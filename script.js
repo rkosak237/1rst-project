@@ -31,3 +31,11 @@ function goTop() {
   }
   window.scroll(0, marginY);
 }
+
+function openNav() {
+  document.getElementById("hidNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("hidNav").style.width = "0%";
+}
