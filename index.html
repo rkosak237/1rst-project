@@ -20,10 +20,23 @@
               <li class="nav-item"><a onclick="initScroll('services-container'); return false;" href="#">services</a></li>
               <li class="nav-item"><a onclick="initScroll('mission'); return false;" href="#">mission</a></li>
               <li class="nav-item"><a onclick="initScroll('top'); return false;" href="#">main</a></li>
-              <li class="nav-item"><span id="burger">☰</span></li>
+              <span id="burger" onclick="openNav()">&#9776</span>
           </ul>
               <a id="goTop" onclick="goTop(); return false;" href="#">></a>
         </div>
+
+        <div id="hidNav" class="nav-hidden">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+          <div class="overlay-cont">
+            <a  href="#">main</a>
+            <a href="#">mission</a>
+            <a href="#">services</a>
+            <a href="#">team</a>
+            <a href="#">portfolio</a>
+            <a href="#">pricing</a>
+          </div>
+        </div>
+        <span id="burger" onclick="openNav()">&#9776</span>
         <div class="middle">
         <div class="middle-cont">
           <p>Hey, whats up?</p>
@@ -194,7 +207,7 @@
             <p>Basic</p>
           </div>
           <div class="pr-inside">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 
             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
           </div>

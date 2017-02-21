@@ -68,21 +68,69 @@
           cursor: pointer;
         }
 #burger {
-  top:20px;
-  position: relative;
-  left:-40px;
-  color:#fff;
-  font-size: 30px;
+  color: #fff;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  line-height: 35px;
+  top:2%;
+  position: fixed;
+  right:2%;
+  font-size:180%;
   text-align: center;
   display: block;
   padding: 10px 10px;
   transition: .5s;
-  font-weight: bold;
+
   }
   #burger:hover {
-    color:#00bc8d;
+    color: #00bc8d;
     cursor: pointer;
   }
+
+.nav-hidden {
+  height:100%;
+  width: 0;
+  overflow-x: hidden;
+  position: fixed;
+  z-index: 1;
+  top:0;
+  right:0;
+  background-color: rgba(0,0,0, 0.9);
+
+}
+.nav-hidden a {
+  font-size: 26px;
+  color:#00bc8d;
+  display: block;
+  transition: 0.5s;
+  text-decoration: none;
+  padding:8px;
+}
+.nav-hidden a:hover {
+  color:#fff;
+}
+.closebtn {
+  position: absolute;
+  top:10%;
+  right:45px;
+  font-size: 50px;
+  border: 1px solid #00bc8d;
+  padding: 10px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+.overlay-cont {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
 @media only screen and (max-width:420px) {
 .nav-item, .burger, .first-gal-nav {
   }
@@ -95,6 +143,9 @@
 #burger {
   display: block;
   text-align: center;
+}
+.nav-burger {
+  display: block;
 }
 #services-container {
   width: 82%;
@@ -117,12 +168,18 @@
   #burger {
     display: block;
   }
+  .nav-burger {
+    display: block;
+  }
   #services-container {
     width: 550px;
   }
 }
 @media (min-width:863px) {
   #burger {
+    display: none;
+  }
+  .nav-burger {
     display: none;
   }
 }
@@ -173,7 +230,6 @@
   }
     .button-middle {
        text-decoration: none;
-       z-index: 1;
        font-size: 150%;
        font-weight: bold;
        padding: 10px 10px;
@@ -198,6 +254,7 @@
 .whyUs {
   padding: 50px 0 100px 0;
   height: 100vh;
+  line-height: 100%;
   width: auto;
   overflow: hidden;
   margin-left: auto;
@@ -207,8 +264,8 @@
 }
     .whyUs-copy {
       position: relative;
+      top:15%;
       text-align: center;
-      top:6%;
       margin-left:5px;
       margin-right:5px;
     }
@@ -219,8 +276,8 @@
         color:#fff;
       }
   .whyUs-text {
+    top:15%;
     text-align: center;
-    top:6%;
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -288,7 +345,7 @@
   background-color: #fff;
   position: relative;
   padding: 40px 0px 10px 0px;
-  height: 100vh;
+  height: auto;
   width: 90%;
   display: flex;
   flex-wrap: wrap;
@@ -327,6 +384,7 @@
   height: auto;
   width: auto;
   position: relative;
+  padding:50px 0 0 0;
   margin-top:5%;
   margin-left: auto;
   margin-right: auto;
