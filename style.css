@@ -30,6 +30,7 @@
 }
 
   .nav-item a {
+
     top:20px;
     position: relative;
     display: block;
@@ -73,10 +74,10 @@
   width: 35px;
   border-radius: 50%;
   line-height: 35px;
-  top:2%;
+  top:4%;
   position: fixed;
-  right:2%;
-  font-size:180%;
+  right:5%;
+  font-size:250%;
   text-align: center;
   display: block;
   padding: 10px 10px;
@@ -88,40 +89,45 @@
     cursor: pointer;
   }
 
-.nav-hidden {
-  height:100%;
-  width: 0;
-  overflow-x: hidden;
-  position: fixed;
-  z-index: 1;
-  top:0;
-  right:0;
-  background-color: rgba(0,0,0, 0.9);
+  .nav-hidden {
+    height:100%;
+    width: 0;
+    overflow-x: hidden;
+    position: fixed;
+    z-index: 1;
+    top:0;
+    right:0;
+    background-color: #fff;
+    filter: opacity(0.94);
 
-}
-.nav-hidden a {
-  font-size: 26px;
-  color:#00bc8d;
-  display: block;
-  transition: 0.5s;
-  text-decoration: none;
-  padding:8px;
-}
-.nav-hidden a:hover {
-  color:#fff;
-}
+  }
+  .nav-hidden a {
+    font-size: 26px;
+    color:#666;
+    display: block;
+    transition: 0.5s;
+    text-decoration: none;
+    padding:8px;
+  }
+  .nav-hidden a:hover {
+    color: #00bc8d;
+  }
+  .closebtn:hover {
+    color: #00bc8d;
+  }
 .closebtn {
   position: absolute;
   top:10%;
   right:45px;
   font-size: 50px;
-  border: 1px solid #00bc8d;
+  border: 1px solid #666;
   padding: 10px;
   border-radius: 50%;
   width: 50px;
   height: 50px;
   line-height: 50px;
   text-align: center;
+  transition: 0.5s;
 }
 .overlay-cont {
   position: relative;
@@ -131,7 +137,7 @@
   margin-top: 30px;
 }
 
-@media only screen and (max-width:420px) {
+@media only screen and (max-width:480px) {
 .nav-item, .burger, .first-gal-nav {
   }
   .first-gal-nav {
@@ -144,11 +150,15 @@
   display: block;
   text-align: center;
 }
+.
 .nav-burger {
   display: block;
 }
+.team-flex-container {
+  width: 320px;
+}
 #services-container {
-  width: 82%;
+  max-width: 300px;
 }
 .services-container ul li{
   float:none;
@@ -165,6 +175,9 @@
   .nav-item a {
     display: none;
   }
+  .team-flex-container {
+    width: 550px;
+  }
   #burger {
     display: block;
   }
@@ -172,8 +185,10 @@
     display: block;
   }
   #services-container {
-    width: 550px;
+    width: 530px;
   }
+}
+.team-flex-container {
 }
 @media (min-width:863px) {
   #burger {
@@ -186,9 +201,7 @@
 
 /*first container with CTA */
 .first-section {
-  min-height: 100vh;
-  max-height: 150vh;
-  height: auto;
+  height:100vh;
   width: auto;
   position: relative;
 }
@@ -202,7 +215,10 @@
     background-size: cover;
   }
 .middle {
+  top:17%;
+  width: 100%;
   clear: both;
+  margin:0 auto;
   position: relative;
   align-content: center;
   width: auto;
@@ -210,16 +226,15 @@
   .middle-cont {
     padding: 15px 10px;
     width: auto;
-     text-align: center;
-     position: relative;
-     top: 80px;
+    text-align: center;
+    align-items: center;
   }
   .middle-cont p {
     align-content: center;
-    top:20px;
     text-align: center;
-    font-size:250%;
-    padding: 0px 0px 10px 0px;
+    font-size:180%;
+    padding: 10px 0px 10px 0px;
+    line-height: 1.8em;
     width: auto;
     color: #fff;
     border: 5px 50px 100px 150px solid white;
@@ -237,25 +252,21 @@
        color:#fff;
        transition-duration: 0.5s;
        text-align: center;
-       top: 80px;
        position: relative;
        border: 5px 100px 40px 25px;
        background-color:#00bc8d;
        opacity: 0.7;
-       margin:15px;
-
     }
       .button-middle:hover {
          opacity: 1;
          color: #fff;
       }
 
-/*mission - vission - why us? */
+/*mission - why us? */
 .whyUs {
-  padding: 50px 0 100px 0;
-  height: 100vh;
+  padding: 30px 0 10px 0;
   line-height: 100%;
-  width: auto;
+  height: auto;
   overflow: hidden;
   margin-left: auto;
   margin-right: auto;
@@ -264,7 +275,6 @@
 }
     .whyUs-copy {
       position: relative;
-      top:15%;
       text-align: center;
       margin-left:5px;
       margin-right:5px;
@@ -272,18 +282,16 @@
       .whyUs-copy h1 {
         letter-spacing: 3px;
         text-transform: uppercase;
-        font-size: 180%;
+        font-size: 160%;
         color:#fff;
       }
   .whyUs-text {
-    top:15%;
     text-align: center;
     position: relative;
     margin-left: auto;
     margin-right: auto;
     padding: 10px 20px 10px 20px;
-    width: 70%;
-    padding-bottom:20px;
+    max-width: 960px;
   }
     .whyUs-text p {
       font-size: 120%;
@@ -293,19 +301,23 @@
 /*containter with services- icons */
 .services-container {
   background-color: #ffffff;
-  height:100vh;
+  height: auto;
   position: relative;
-  margin:10px auto;
-  width: 964px;
+  margin:0 auto;
+  width: 1000px;
+  clear: both;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
 }
   .cont-header {
     text-align: center;
     font-size: 25px;
     color: #666;
-    width: 100%;
+    width: 1000px;
     letter-spacing: 3px;
     text-transform: uppercase;
-    padding:28px 0 0 5px;
+    padding:28px 0 0 0;
     clear: both;
   }
   .coloremp {
@@ -317,8 +329,8 @@
     .services-container ul li {
       list-style:none;
       float:left;
-      padding: 40px 20px 100px 0px;
-      width:200px;
+      padding: 40px 0px 100px 0px;
+      width: 231px;
       height: 120px;
       text-align: center;
       display: block;
@@ -332,6 +344,7 @@
       }
 
   .service-cont {
+    padding:10px;
   }
       .services-icons img {
       }
@@ -340,28 +353,28 @@
       }
 /**Team **/
 .team-flex-container {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin: 0 auto;
   background-color: #fff;
   position: relative;
-  padding: 40px 0px 10px 0px;
+  padding: 80px 0px 10px 0px;
   height: auto;
-  width: 90%;
+  max-width: 960px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
     .team-flex-item {
       min-width:200px;
-      max-width: 350px;
+      max-width: 290px;
       box-sizing: border-box;
       margin-top: 40px;
       height:auto;
       text-align: center;
+      flex-wrap: wrap;
     }
     .portrait {
-      height: 200px;
-      width: 200px;
+      height: 150px;
+      width: 150px;
       -moz-border-radius: 150px;
       border-radius: 150px;
       background-color: black;
@@ -376,16 +389,15 @@
         color: #666;
       }
       .flex-text-below-portrait p {
-        font-size: 22px;
+        font-size: 16px;
       }
 
 /*gallery with sortable content*/
 .sortable-cont {
   height: auto;
-  width: auto;
+  max-width: 1400px;
   position: relative;
-  padding:50px 0 0 0;
-  margin-top:5%;
+  padding-top: 80px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -428,7 +440,7 @@
   height:auto;
   margin-left: 10%;
   margin-right: 10%;
-  width: 100%;
+  max-width: 1200px;
   justify-content: space-around;
   margin-top: 0;
   margin-bottom: 0;
@@ -456,13 +468,14 @@
 /*Pricing*/
 .pricing-container {
   height: auto;
-  width:auto;
+  max-width:960px;
   position: relative;
   padding: 50px 0 50px 0;
   margin-top:7%;
   margin-bottom: 10%;
   margin-left: 15%;
   margin-right: 15%;
+  margin: 0 auto;
   display:flex;
   flex-flow:wrap;
   justify-content: space-around;
