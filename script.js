@@ -1,41 +1,16 @@
-var marginY = 0;
-var destination = 0;
-var speed = 10;
-var scroller = null;
+$(document).ready(function() {
 
-function initScroll(elementId) {
-  destination = document.getElementById(elementId).offsetTop;
+  $(".nav").wrap('<div class="nav-ph"></div>');
+  $(".nav-ph").height($(".nav").outerHeight());
 
-  scroller = setTimeout(function() {
-    initScroll(elementId);
-  }, 1);
+  $(window).scroll(function() {
+    var scrollPos = $(window).scrollTop();
 
-  marginY = marginY + speed;
+    if (scrollPos >= 50) {
+      $(".nav").addClass("fixed");
+    } else {
+      $(".nav").removeClass("fixed");
+    }
+  });
 
-  if(marginY >= destination) {
-    clearTimeout(scroller);
-  }
-  window.scroll(0, marginY);
-}
-
-//to top
-function goTop() {
-  scroller = setTimeout(function(){
-    goTop();
-  }, 1);
-
-  marginY = marginY - speed;
-
-  if(marginY <= 0) {
-    clearTimeout(scroller);
-  }
-  window.scroll(0, marginY);
-}
-
-function openNav() {
-  document.getElementById("hidNav").style.width = "100%";
-}
-
-function closeNav() {
-  document.getElementById("hidNav").style.width = "0%";
-}
+});

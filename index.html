@@ -20,10 +20,9 @@
               <li class="nav-item"><a onclick="initScroll('mission'); return false;" href="#">mission</a></li>
               <li class="nav-item"><a onclick="initScroll('top'); return false;" href="#">main</a></li>
               <span id="burger" onclick="openNav()">&#9776</span>
-          </ul>
-              <a id="goTop" onclick="goTop(); return false;" href="#">></a>
+          </u>
         </div>
-
+          <a id="goTop" onclick="goTop(); return false;" href="#">></a>
         <div id="hidNav" class="nav-hidden">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
           <div class="overlay-cont">
@@ -131,6 +130,7 @@
   </ul>
 
 </div>
+<div class="team">
   <div class="team-flex-container" id="team">
     <h1 class="cont-header">our <span class="coloremp">team</span></h1>
     <div class="team-flex-item">
@@ -155,6 +155,7 @@
         </div>
     </div>
   </div>
+</div>
 <!---Nav bar for gallery start --->
   <div class="sortable-cont" id="portfolio">
     <h1 class="cont-header">our <span class="coloremp">portfolio</span></h1>
@@ -197,17 +198,26 @@
       <img src="gallery/girlforest.jpg" alt="wildlife">
     </div>
   </div>
+</div>
   <!---Gallery stop --->
-  </div>
-
+  <div class="team">
   <div class="pricing-container" id="pricing">
     <div class="pricing">
           <div class="pr-top">
             <p>Basic</p>
           </div>
           <div class="pr-inside">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-            <p class="price">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+            <p><span class="price">9.99</span> $</p>
+            <p class="price-text">
+              per month
+              </p>
+            <ul>
+              <li><b>lore</b> ipsum</li>
+              <li><b>lore</b> ipsum</li>
+              <li><b>lore</b> ipsum</li>
+              <li><b>lore</b> ipsum</li>
+              <li><b>lore</b> ipsum</li>
+            </ul>
           </div>
           <div class="pr-bottom">
             <a class="button-middle" href="#">Purchase!</a>
@@ -218,7 +228,17 @@
             <p>Premium</p>
           </div>
           <div class="pr-inside">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <p><span class="price">29.99</span> $</p>
+            <p class="price-text">
+              per month
+              </p>
+            <ul>
+              <li><b>lore</b> ipsum</li>
+              <li><b>lore</b> ipsum</li>
+              <li><b>lore</b> ipsum</li>
+              <li><b>lore</b> ipsum</li>
+              <li><b>lore</b> ipsum</li>
+            </ul>
           </div>
           <div class="pr-bottom">
             <a class="button-middle" href="#">Purchase!</a>
@@ -229,39 +249,49 @@
             <p>Business</p>
           </div>
           <div class="pr-inside">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <p><span class="price">49.99</span> $</p>
+            <p class="price-text">
+              per month
+              </p>
+            <ul>
+              <li><b>lore</b> ipsum</li>
+              <li><b>lore</b> ipsum</li>
+              <li><b>lore</b> ipsum</li>
+              <li><b>lore</b> ipsum</li>
+              <li><b>lore</b> ipsum</li>
+            </ul>
           </div>
           <div class="pr-bottom">
             <a class="button-middle" href="#">Purchase!</a>
           </div>
       </div>
     </div>
-      <div class="footer">
-              <div class="col-3">
-                <img src="ikony/pin1.png" alt="">
-                <p>Gold On The Ceiling sp. z o.o.<br />
-                    plac Defilad 1<br />
-                    00-901 Warszawa</p>
-              </div>
-
-              <div class="col-3">
-                <img src="ikony/share.png" alt="">
-                <ul>
-                  <li><a class="linking" href="">Facebook</a></li>
-                  <li><a class="linking" href="">Linkedin</a></li>
-                  <li><a class="linking" href="">Instagram</a></li>
-                  <li><a class="linking" href="">Pinterest</a></li>
-                </ul>
-              </div>
-              <div class="col-3">
-                <img src="ikony/share1.png" alt="">
-                <ul>
-                  <li><a class="linking" href="">Download content</a></li>
-                </ul>
-        </div>
+  </div>
+  <div class="footer">
+      <div class="col-3">
+        <img src="ikony/pin1.png" alt="">
+        <p>Gold On The Ceiling sp. z o.o.<br />
+            plac Defilad 1<br />
+            00-901 Warszawa</p>
       </div>
+        <div class="col-3">
+          <img src="ikony/share.png" alt="">
+          <ul>
+            <li><a class="linking" href="">Facebook</a></li>
+            <li><a class="linking" href="">Linkedin</a></li>
+            <li><a class="linking" href="">Instagram</a></li>
+            <li><a class="linking" href="">Pinterest</a></li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <img src="ikony/share1.png" alt="">
+          <ul>
+            <li><a class="linking" href="">Downlocontent</a></li>
+          </ul>
+        </div>
+  </div>
     </main>
-    <script src="path/to/jquery-3.1.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="script.js"></script>
     </body>
 </html>
