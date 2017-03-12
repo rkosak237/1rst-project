@@ -13,12 +13,12 @@
         </div>
         <div class="nav">
           <ul class="nav-list">
-            <li class="nav-item"><a onclick="initScroll('pricing'); return false;" href="#">pricing</a></li>
-              <li class="nav-item"><a onclick="initScroll('portfolio'); return false;" href="#">portfolio</a></li>
-              <li class="nav-item"><a onclick="initScroll('team'); return false;" href="#">team</a></li>
-              <li class="nav-item"><a onclick="initScroll('services-container'); return false;" href="#">services</a></li>
-              <li class="nav-item"><a onclick="initScroll('mission'); return false;" href="#">mission</a></li>
-              <li class="nav-item"><a onclick="initScroll('top'); return false;" href="#">main</a></li>
+            <li><a class="nav-item" href="#pricing">pricing</a></li>
+              <li><a class="nav-item"  href="#portfolio">portfolio</a></li>
+              <li><a class="nav-item"  href="#team">team</a></li>
+              <li><a class="nav-item"  href="#services-container">services</a></li>
+              <li><a class="nav-item" href="#mission">mission</a></li>
+              <li><a class="nav-item" href="#">main</a></li>
               <span id="burger" onclick="openNav()">&#9776</span>
           </u>
         </div>
@@ -26,7 +26,7 @@
         <div id="hidNav" class="nav-hidden">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
           <div class="overlay-cont">
-            <a  href="#">main</a>
+            <a href="#">main</a>
             <a href="#">mission</a>
             <a href="#">services</a>
             <a href="#">team</a>
@@ -46,6 +46,7 @@
         </div>
       </div>
       </div>
+      <!--Mission -->
   <div class="whyUs" id="mission">
     <div class="whyUs-copy">
       <h1> Why choose us?</h1>
@@ -54,6 +55,7 @@
       <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
     </div>
   </div>
+  <!--Service container-->
   <div class="services-container" id="services-container">
     <h1 class="cont-header">how we <span class="coloremp">work</span>?</h1>
     <ul>
@@ -173,7 +175,7 @@
 
   <!---Gallery start --->
   <div class="gallery">
-    <div id="pubs" class="galleryItem">
+    <div id="potrfolio" class="galleryItem">
       <img  src="gallery/bar.jpg" alt="night life">
     </div>
     <div class="galleryItem">
@@ -268,6 +270,7 @@
     </div>
   </div>
   <div class="footer">
+    <div class="footer-box">
       <div class="col-3">
         <img src="ikony/pin1.png" alt="">
         <p>Gold On The Ceiling sp. z o.o.<br />
@@ -286,9 +289,10 @@
         <div class="col-3">
           <img src="ikony/share1.png" alt="">
           <ul>
-            <li><a class="linking" href="">Downlocontent</a></li>
+            <li><a class="linking" href="">Something</a></li>
           </ul>
         </div>
+      </div>
   </div>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
