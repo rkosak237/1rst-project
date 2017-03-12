@@ -146,7 +146,7 @@
   .first-gal-nav {
     width: 100%;
   }
-.nav-item a {
+.nav-item {
   display: none;
 }
 #burger {
@@ -177,7 +177,7 @@
 .nav-item, .burger, .first-gal-nav, {
     width:98%;
   }
-  .nav-item a {
+  .nav-item {
     display: none;
   }
   .team-flex-container {
@@ -420,7 +420,7 @@
   justify-content: space-around;
 }
   .gal-nav {
-    width: 80%;
+    max-width:960px;
     position: relative;
     min-height: 50px;
     max-height: 250px;
@@ -451,35 +451,35 @@
 .gallery {
   text-align: center;
   position:relative;
-  display: flex;
+  display: block;
   height:auto;
+  box-sizing: border-box;
   margin-left: 10%;
   margin-right: 10%;
-  max-width: 1200px;
-  justify-content: space-around;
+  max-width: 960px;
   margin-top: 0;
   margin-bottom: 0;
-  align-self: flex-start;
-  flex-flow: wrap;
-  padding: 0 0 40px 0;
+  padding-bottom: 40px;
 }
-  .galleryItem {
-    min-width: 240px;
-    width:25%;
-    height: auto;
-    text-align: center;
-  }
-      .galleryItem img {
-        height:180px;
-        width: 240px;
-        padding: 10px 0px 10px 0px;
-        position: relative;
-        opacity: 0.7;
-        transition: .5s;
+      .category_item {
+      box-sizing: border-box;
+      float: left;
+      padding:10px;
+      height: 180px;
+      width: 240px;
+      transition: all 0.5 ease-in-out;
+      opacity:0.8;
+      transition:0.5s;
       }
-      .galleryItem img:hover {
-        opacity: 1;
-        cursor:pointer;
+      .category_item:hover {
+      opacity: 1;
+      cursor:pointer;
+      }
+      .hide {
+        transform: scale(0);
+        width:0;
+        padding:0;
+        transition: all 0.5 ease-in-out;
       }
 /*Pricing*/
 .pricing-container {

@@ -29,6 +29,21 @@ $(document).ready(function() {
       $("#goTop").fadeOut("fast");
     }
 
+  });
+  $(".first-gal-nav").click(function(){
+    var category = $(this).attr("id")
+
+    if (category == "all") {
+      $(".category_item").addClass("hide");
+      setTimeout(function() {
+        $(".category_item").removeClass("hide");
+      }, 300);
+    } else {
+      $(".category_item").addClass("hide");
+      setTimeout(function() {
+        $("." + category).removeClass("hide");
+      }, 300);
+    }
   })
 });
 
