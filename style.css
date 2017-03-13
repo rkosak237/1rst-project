@@ -582,7 +582,7 @@
 }
 .footer-box {
   margin:0 auto;
-  width:100%;
+  width:960px;
 }
   .footer-links {
   position: relative;
@@ -594,7 +594,7 @@
     position: relative;
     text-decoration: none;
     height:auto;
-    width:100%;
+    width:320px;
     display: block;
     float:left;
     margin:0 auto;
@@ -639,6 +639,7 @@
   width:100%;
   background-color: black;
   opacity: 0.8;
+  transition: 0.5 ease-in-out;
 }
 .nav-ph {
   z-index:500px;

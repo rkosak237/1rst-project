@@ -1,5 +1,7 @@
+
+
 $(document).ready(function() {
-  /**sticky nav - start**/
+  // sticky nav - start
   $(".nav").wrap('<div class="nav-ph"></div>');
   $(".nav-ph").height($(".nav").outerHeight());
 
@@ -12,7 +14,9 @@ $(document).ready(function() {
       $(".nav").removeClass("fixed");
     }
   });
-    /**sticky nav - stop**/
+  // sticky nav - stop
+
+  // smooth scroll - start
     $('.nav-item').click(function(e){
        var linkHr = $(this).attr('href');
        var firstSection = $('#top').outerHeight;
@@ -21,7 +25,9 @@ $(document).ready(function() {
          scrollTop: $(linkHr).offset().top-60}, 1000);
        e.preventDefault();
      });
-  /**smooth scroll - start**/
+     // smooth scroll - stop
+
+     // fadeOut - start
   $(window).scroll(function() {
     if ($(window).scrollTop() >= 200) {
       $("#goTop").fadeIn("slow");
@@ -30,6 +36,8 @@ $(document).ready(function() {
     }
 
   });
+  /**smooth scroll - start**/
+  /*gallery filter start*/
   $(".first-gal-nav").click(function(){
     var category = $(this).attr("id")
 
@@ -45,6 +53,10 @@ $(document).ready(function() {
       }, 300);
     }
   })
+  $('.button-middle').click(function(){
+    alert('yup, its working');
+  })
+    /*gallery filter stop*/
 });
 
 function openNav() {
