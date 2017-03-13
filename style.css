@@ -161,7 +161,7 @@
 }
 .service-cont {
   width:480px;
-  padding:40px;
+  padding:35px;
 }
 .service-cont ul li {
   margin: 0 auto;
@@ -582,7 +582,7 @@
 }
 .footer-box {
   margin:0 auto;
-  width:960px;
+  width:100%;
 }
   .footer-links {
   position: relative;
@@ -594,11 +594,11 @@
     position: relative;
     text-decoration: none;
     height:auto;
+    width:100%;
     display: block;
     float:left;
     margin:0 auto;
-    min-width:300px;
-    max-width:600px;
+
     box-sizing: border-box;
     padding-top: 20px;
     padding-bottom: 30px;
