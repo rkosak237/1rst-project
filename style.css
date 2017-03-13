@@ -160,8 +160,8 @@
   width: 320px;
 }
 .service-cont {
-  width:320px;
-
+  width:480px;
+  padding:30px;
 }
 .service-cont ul li {
   margin: 0 auto;
@@ -188,8 +188,8 @@
   flex-wrap: wrap;
 }
 }
-@media only screen and (min-width:430px) and (max-width:860px) {
-.nav-item, .burger, .first-gal-nav, {
+@media only screen and (min-width:481px) and (max-width:860px) {
+.nav-item, .first-gal-nav {
     width:98%;
   }
   .nav-item {
@@ -274,7 +274,6 @@
     line-height: 1.8em;
     width: auto;
     color: #fff;
-    border: 5px 50px 100px 150px solid white;
   }
   .middle-bttn {
     text-align: center;
@@ -290,7 +289,6 @@
        transition-duration: 0.5s;
        text-align: center;
        position: relative;
-       border: 5px 100px 40px 25px;
        background-color:#00bc8d;
        opacity: 0.7;
     }
@@ -504,7 +502,7 @@
         transform: scale(0);
         width:0;
         padding:0;
-        transition: all 0.5 ease-in-out;
+        transition: all 0.5s ease-in-out;
       }
 /*Pricing*/
 .pricing-container {
@@ -643,7 +641,6 @@
   width:100%;
   background-color: black;
   opacity: 0.8;
-  height:
 }
 .nav-ph {
   z-index:500px;
