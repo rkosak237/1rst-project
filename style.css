@@ -82,7 +82,7 @@
   right:5%;
   font-size:250%;
   text-align: center;
-  display: block;
+  display: none;
   padding: 10px 10px;
   transition: .5s;
 
@@ -153,82 +153,42 @@
   display: block;
   text-align: center;
 }
-.nav-burger {
-  display: block;
-}
 .team-flex-container {
   width: 320px;
 }
-.service-cont {
-  width:480px;
-  padding:35px;
-}
-.service-cont ul li {
-  margin: 0 auto;
-  display:block;
-  padding:5px;
-}
-.gallery {
+
+.gallery, .gal-nav, .service-cont {
   width: 240px;
 }
-.gal-nav {
-  width: 240px;
-}
-.service-cont ul li {
-  float:none;
-  text-align: center;
-}
-.service-cont ul li a {
-  text-align: center;
+.footer-box {
+  width: 320px;
 }
 
-.col-3 {
-  width: 480px;
-  padding:30px;
-  margin: 0 auto;
 }
-}
-@media only screen and (min-width:481px) and (max-width:860px) {
+@media  (min-width:481px) and (max-width:860px) {
 .nav-item, .first-gal-nav {
     width:98%;
   }
   .nav-item {
     display: none;
   }
-  .team-flex-container {
-    width: 550px;
-  }
   #burger {
     display: block;
   }
-  .nav-burger {
-    display: block;
-  }
-  .service-cont {
-    width: 550px;
-  }
-  .gallery {
+  .service-cont, .gallery, .gal-nav, .pricing-container, .team-flex-container {
     width: 480px;
   }
-  .gal-nav {
-    width:480px;
-  }
-  .pricing-container {
-    width:500px;
-  }
-  .col-3 {
-    width:500px;
-    float:none;
-  }
+.footer-box {
+  width: 320px;
+}
 }
 
-
-@media (min-width:863px) {
-  #burger {
-    display: none;
+@media (min-width:863px) and (max-width:1221px) {
+  .services-container, .gallery, .service-cont, .gal-nav, .footer-box {
+    width:720px;
   }
-  .nav-burger {
-    display: none;
+  .col-3 {
+    width:630px;
   }
 }
 
@@ -332,24 +292,27 @@
     }
 /*containter with services- icons */
 .services-container {
-  margin: 0 auto;
-  position: relative;
-  padding: 20px 0px 30px 0px;
   height: auto;
-  max-width:960px;
+  max-width: 960px;
+  position: relative;
+  padding:40px 0 0px 0;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
-  flex-wrap: wrap;
-  text-align: center;
+  flex-flow: wrap;
+  justify-content: space-around;
 }
 .service-cont {
-  width:1100px;
-  margin:0 auto;
-  display: block;
+  max-width:960px;
+  height:auto;
+  padding-top:40px;
+  text-align: center;
   box-sizing: border-box;
+  position: relative;
 }
   .cont-header {
     text-align: center;
-    width:1100px;
+    width:960px;
     font-size: 25px;
     color: #666;
     letter-spacing: 3px;
@@ -361,25 +324,40 @@
   }
   .service-cont ul {
     list-style: none;
+    margin:0 auto;
+    display: block;
   }
     .service-cont ul li {
       float:left;
-      padding: 40px 0px 100px 0px;
-      height: 120px;
-      width:215px;
+      padding:10px 2.5px 10px 2.5px;
+      box-sizing: border-box;
+      height: auto;
+      width:222px;
       text-align: center;
+      border: solid 1px black;
+    }
+    .service-cont a {
+      padding:10px 2.5px 10px 2.5px;
+      box-sizing: border-box;
+      float:left;
+      height: auto;
+      width:240px;
+      text-align: center;
+      text-decoration: none;
+      color:#666;
     }
       .service-cont ul li a {
         text-decoration: none;
-        width:215px;
         color:#666;
         text-align: center;
-        flex-wrap: wrap;
       }
+
       .services-icons img {
       }
-      .cont-para p {
+      .cont-para {
       font-size: 16px;
+      width:80%;
+      margin:0 auto;
       }
 /**Team **/
 .team {
@@ -519,8 +497,7 @@
   .pricing {
     position: relative;
     height:600px;
-    max-width:600px;
-    min-width:300px;
+    width:250px;
     margin-top: 1%;
     margin-bottom: 1%;
     padding-bottom: 30px;
@@ -569,7 +546,7 @@
     }
 
 /*Footer*/
-.footer {
+footer {
   padding: 100px 0 100px 0;
   background-color: #666;
   height: auto;
@@ -577,12 +554,16 @@
   position: relative;
   text-align: center;
   display: flex;
-  margin-top: 0;
+  flex-flow: wrap;
   justify-content: space-around;
 }
 .footer-box {
-  margin:0 auto;
-  width:960px;
+  max-width:960px;
+  height:auto;
+  padding-top:40px;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
 }
   .footer-links {
   position: relative;
@@ -595,10 +576,7 @@
     text-decoration: none;
     height:auto;
     width:320px;
-    display: block;
     float:left;
-    margin:0 auto;
-
     box-sizing: border-box;
     padding-top: 20px;
     padding-bottom: 30px;
