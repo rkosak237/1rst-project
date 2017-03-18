@@ -43,8 +43,9 @@
     font-size: 16px;
     transition-duration: 0.5s;
     font-weight: bold;
+    transition: 1s ease-in-out;
   }
-  #goTop {
+  .goTop {
     background: #00bc8d;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     height: 55px;
@@ -71,14 +72,14 @@
           color: #00bc8d;
           cursor: pointer;
         }
-#burger {
+.burger {
   color: #fff;
   height: 35px;
   width: 35px;
   border-radius: 50%;
   line-height: 35px;
   top:1%;
-  position: fixed;
+  position: absolute;
   right:5%;
   font-size:250%;
   text-align: center;
@@ -617,9 +618,10 @@ footer {
   width:100%;
   background-color: black;
   opacity: 0.8;
-  transition: 0.5 ease-in-out;
+  transition: top 0.2s ease-in-out;
 }
 .nav-ph {
   z-index:500px;
-
+}
+.nav-up {
 }

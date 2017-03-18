@@ -5,26 +5,37 @@ $(document).ready(function() {
   $(".nav").wrap('<div class="nav-ph"></div>');
   $(".nav-ph").height($(".nav").outerHeight());
 
-  $(window).scroll(function() {
-    var scrollPos = $(window).scrollTop();
-
-    if (scrollPos >= 50) {
-      $(".nav").addClass("fixed");
-    } else {
-      $(".nav").removeClass("fixed");
+var mywindow = $(window);
+var mypos = mywindow.scrollTop();
+var up = false;
+var newscroll;
+mywindow.scroll(function () {
+    newscroll = mywindow.scrollTop();
+    if (newscroll > mypos && !up) {
+        $(".nav").stop().fadeOut();
+        up = !up;
+        console.log(up);
+    } else if(newscroll < mypos && up) {
+        $(".nav").addClass('fixed').fadeIn();
+        up = !up;
     }
-  });
+    mypos = newscroll;
+});
+
   // sticky nav - stop
 
   // smooth scroll - start
-    $('.nav-item').click(function(e){
+    $('.nav-item, .nav-hidden a').click(function(e){
        var linkHr = $(this).attr('href');
        var firstSection = $('#top').outerHeight;
 
        $('html, body').animate({
-         scrollTop: $(linkHr).offset().top-60}, 1000);
+         scrollTop: $(linkHr).offset().top}, 1000);
        e.preventDefault();
      });
+$('.nav-hidden').click(function() {
+  $('a').removeClass('closeNav')
+});
      // smooth scroll - stop
 
      // fadeOut - start
@@ -34,8 +45,8 @@ $(document).ready(function() {
     } else {
       $("#goTop").fadeOut("fast");
     }
-
   });
+
   /**smooth scroll - start**/
   /*gallery filter start*/
   $(".first-gal-nav").click(function(){
