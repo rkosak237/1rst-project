@@ -2,8 +2,8 @@
 
 $(document).ready(function() {
   // sticky nav - start
-  $(".nav").wrap('<div class="nav-ph"></div>');
-  $(".nav-ph").height($(".nav").outerHeight());
+  $("nav").wrap('<div class="nav-ph"></div>');
+  $(".nav-ph").height($("nav").outerHeight());
 
 var mywindow = $(window);
 var mypos = mywindow.scrollTop();
@@ -12,11 +12,11 @@ var newscroll;
 mywindow.scroll(function () {
     newscroll = mywindow.scrollTop();
     if (newscroll > mypos && !up) {
-        $(".nav").stop().fadeOut();
+        $("nav").stop().fadeOut();
         up = !up;
         console.log(up);
     } else if(newscroll < mypos && up) {
-        $(".nav").addClass('fixed').fadeIn();
+        $("nav").addClass('fixed').fadeIn();
         up = !up;
     }
     mypos = newscroll;
@@ -27,14 +27,14 @@ mywindow.scroll(function () {
   // smooth scroll - start
     $('.nav-item, .nav-hidden a').click(function(e){
        var linkHr = $(this).attr('href');
-       var firstSection = $('#top').outerHeight;
+       var firstSection = $('#main').outerHeight;
 
        $('html, body').animate({
          scrollTop: $(linkHr).offset().top}, 1000);
        e.preventDefault();
      });
 $('.nav-hidden').click(function() {
-  $('a').removeClass('closeNav')
+  $('a').removeClass('hidN')
 });
      // smooth scroll - stop
 

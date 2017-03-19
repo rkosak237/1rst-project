@@ -8,25 +8,25 @@
     </head>
     <body>
     <main>
-      <div class="first-section" id="top">
+      <div class="first-section" id="main">
         <div class="first-section-picture">
         </div>
-        <div class="nav">
+        <nav>
           <ul class="nav-list">
             <li><a class="nav-item" href="#pricing">pricing</a></li>
               <li><a class="nav-item"  href="#portfolio">portfolio</a></li>
               <li><a class="nav-item"  href="#team">team</a></li>
               <li><a class="nav-item"  href="#services-container">services</a></li>
               <li><a class="nav-item" href="#mission">mission</a></li>
-              <li><a class="nav-item" href="#">main</a></li>
+              <li><a class="nav-item" href="#main">main</a></li>
               <span class="burger" id="burger" onclick="openNav()">&#9776</span>
           </u>
-        </div>
+        </nav>
           <a class="goTop" id="goTop" onclick="goTop(); return false;" href="#">></a>
         <div id="hidNav" class="nav-hidden">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
           <div class="overlay-cont">
-            <a href="#" onclick="closeNav()">main</a>
+            <a href="#main" onclick="closeNav()">main</a>
             <a href="#mission" onclick="closeNav()">mission</a>
             <a href="#services-container" onclick="closeNav()">services</a>
             <a href="#team" onclick="closeNav()">team</a>
@@ -46,16 +46,16 @@
       </div>
       </div>
       <!--Mission -->
-  <div class="whyUs" id="mission">
-    <div class="whyUs-copy">
-      <h1> Why choose us?</h1>
-    </div>
+    <article class="whyUs" id="mission">
+  <header class="whyUs-copy">
+    <h1> Why choose us?</h1>
+  </header>
     <div class="whyUs-text">
       <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
     </div>
-  </div>
+    </article>
   <!--Service container-->
-  <div class="services-container" id="services-container">
+  <section class="services-container" id="services-container">
     <h1 class="cont-header">how we <span class="coloremp">work</span>?</h1>
     <div class="service-cont">
       <a href="">
@@ -100,9 +100,9 @@
         <p>Sed ut perspiciatis unde omnis iste natus error </p>
       </a>
   </div>
-</div>
+</section>
 <!--Team -->
-<div class="team">
+<section class="team">
   <div class="team-flex-container" id="team">
     <h1 class="cont-header">our <span class="coloremp">team</span></h1>
     <div class="team-flex-item">
@@ -127,10 +127,10 @@
         </div>
     </div>
   </div>
-</div>
+</section>
+
 <!--Portfolio -->
-<!---Nav bar for gallery start --->
-  <div class="sortable-cont" id="portfolio">
+  <section class="sortable-cont" id="portfolio">
     <h1 class="cont-header">our <span class="coloremp">portfolio</span></h1>
     <div class="gal-nav">
     <ul>
@@ -145,7 +145,7 @@
   <!---Nav bar for gallery stop--->
 
   <!---Gallery start --->
-  <div class="gallery">
+  <figure class="gallery">
       <img src="gallery/bar.jpg" class="category_item city" alt="city">
       <img src="gallery/basketball.jpg" class="category_item city" alt="city">
       <img src="gallery/forest.jpg" class="category_item nature" alt="nature">
@@ -163,11 +163,11 @@
       <img src="gallery/street2.jpeg" class="category_item city" alt="nature">
       <img src="gallery/various1.jpeg" class="category_item various" alt="nature">
 
-  </div>
-</div>
+  </figure>
+</section>
   <!---Gallery stop --->
   <!--pricing-container -->
-  <div class="team">
+  <section class="team">
   <div class="pricing-container" id="pricing">
     <div class="pricing">
           <div class="pr-top">
@@ -233,7 +233,7 @@
           </div>
       </div>
     </div>
-  </div>
+  </section>
   <!--pricing-container stop -->
   <!--Footer start -->
   <footer>
