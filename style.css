@@ -308,7 +308,7 @@
 .service-cont {
   max-width:960px;
   height:auto;
-  padding-top:40px;
+  padding:40px 0 40px 0;
   text-align: center;
   box-sizing: border-box;
   position: relative;
@@ -349,19 +349,15 @@
       text-decoration: none;
       color:#666;
     }
-      .service-cont ul li a {
-        text-decoration: none;
-        color:#666;
-        text-align: center;
+      .service-cont a p {
+        font-size: 16px;
+        width:80%;
+        margin:0 auto;
       }
 
       .services-icons img {
       }
-      .cont-para {
-      font-size: 16px;
-      width:80%;
-      margin:0 auto;
-      }
+
 /**Team **/
 .team {
   background-color: #f2f2f2;
