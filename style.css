@@ -48,8 +48,8 @@ list-style: none;
 .goTop {
   background: #00bc8d;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  height: 55px;
-  width: 55px;
+  height: 54px;
+  width: 54px;
   border-radius: 50%;
   line-height: 55px;
   position: fixed;
@@ -553,7 +553,7 @@ justify-content: space-around;
 
     }
   .price {
-    font-size: 70px;
+    font-size: 67px;
     font-family: "Lato";
   }
 
