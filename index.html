@@ -2,7 +2,7 @@
 <html lang="pl">
     <head>
       <meta charset="utf-8">
-      <title>  </title>
+      <title>Project no.1 rkosak</title>
       <link rel="stylesheet" type="text/css" href="style.css">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
@@ -19,15 +19,14 @@
               <li><a class="nav-item"  href="#services-container">services</a></li>
               <li><a class="nav-item" href="#mission">mission</a></li>
               <li><a class="nav-item" href="#main">main</a></li>
-              <span class="burger" id="burger" onclick="openNav()">&#9776</span>
+              <span class="burger" id="burger">&#9776</span>
           </u>
         </nav>
           <a class="goTop" id="goTop" onclick="goTop(); return false;" href="#">></a>
         <div id="hidNav" class="nav-hidden">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
           <div class="overlay-cont">
             <a href="#main" onclick="closeNav()">main</a>
-            <a href="#mission" onclick="closeNav()">mission</a>
+            <a href="#mission" onclick="openClose()">mission</a>
             <a href="#services-container" onclick="closeNav()">services</a>
             <a href="#team" onclick="closeNav()">team</a>
             <a href="#portfolio" onclick="closeNav()">portfolio</a>
@@ -41,14 +40,14 @@
           I know you are curious</p>
         </div>
         <div class="middle-bttn">
-          <a class="button-middle" href="#">Click on it!</a>
+          <a class="button-middle" href="JavaScript:void(0)">Click on it!</a>
         </div>
       </div>
       </div>
       <!--Mission -->
     <article class="whyUs" id="mission">
   <header class="whyUs-copy">
-    <h1> Why choose us?</h1>
+    <h2> Why choose us?</h2>
   </header>
     <div class="whyUs-text">
       <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
@@ -58,46 +57,50 @@
   <section class="services-container" id="services-container">
     <h1 class="cont-header">how we <span class="coloremp">work</span>?</h1>
     <div class="service-cont">
-      <a href="">
-        <img src="ikony/draft.png" alt="">
-        <h3>draft</h3>
-        <p>Sed ut perspiciatis unde omnis iste natus error </p>
+      <a href="JavaScript:void(0)">
+        <figure>
+          <img src="ikony/draft.png" alt="draft">
+         <h3>draft</h3>
+        <figcaption>Sed ut perspiciatis unde omnis iste natus error </figcaption>
+        </figure>
       </a>
-      <a href="">
-        <img src="ikony/light.png" alt="">
-        <h3>draft</h3>
-        <p>Sed ut perspiciatis unde omnis iste natus error </p>
+      <a href="JavaScript:void(0)">
+        <figure>
+          <img src="ikony/light.png " alt="light">
+          <h3>draft</h3>
+          <figcaption>Sed ut perspiciatis unde omnis iste natus error </figcaption>
+        </figure>
       </a>
-
-      <a href="">
-        <img src="ikony/cnt.png" alt="">
-        <h3>draft</h3>
-        <p>Sed ut perspiciatis unde omnis iste natus error </p>
+      <a href="JavaScript:void(0)">
+        <figure><img src="ikony/cnt.png" alt="cnt">
+         <h3>draft</h3>
+        <figcaption>Sed ut perspiciatis unde omnis iste natus error </figcaption>
+      </figure>
       </a>
-      <a href="">
-        <img src="ikony/zebatka.png" alt="">
+      <a href="JavaScript:void(0)">
+        <figure><img src="ikony/zebatka.png" alt="zebatka" >
         <h3>draft</h3>
-        <p>Sed ut perspiciatis unde omnis iste natus error </p>
+        <figcaption>Sed ut perspiciatis unde omnis iste natus error </figcaption> </figure>
       </a>
-      <a href="">
-        <img src="ikony/$.png" alt="">
-        <h3>draft</h3>
-        <p>Sed ut perspiciatis unde omnis iste natus error </p>
+      <a href="JavaScript:void(0)">
+        <figure><img src="ikony/$.png" alt="$">
+         <h3>draft</h3>
+        <figcaption>Sed ut perspiciatis unde omnis iste natus error </figcaption></figure>
       </a>
-      <a href="">
-        <img src="ikony/diagram.png" alt="">
+      <a href="JavaScript:void(0)">
+        <figure><img src="ikony/diagram.png" alt="diagram" >
         <h3>draft</h3>
-        <p>Sed ut perspiciatis unde omnis iste natus error </p>
+        <figcaption>Sed ut perspiciatis unde omnis iste natus error </figcaption></figure>
       </a>
-      <a href="">
-        <img src="ikony/cc2.png" alt="">
-        <h3>draft</h3>
-        <p>Sed ut perspiciatis unde omnis iste natus error </p>
+      <a href="JavaScript:void(0)">
+        <figure><img src="ikony/cc2.png" alt="cc2">
+         <h3>draft</h3>
+        <figcaption>Sed ut perspiciatis unde omnis iste natus error </figcaption> </figure>
       </a>
-      <a href="">
-        <img src="ikony/ccare.png" alt="">
-        <h3>draft</h3>
-        <p>Sed ut perspiciatis unde omnis iste natus error </p>
+      <a href="JavaScript:void(0)">
+        <figure><img src="ikony/ccare.png" alt="ccare">
+         <h3>draft</h3>
+        <figcaption>Sed ut perspiciatis unde omnis iste natus error </figcaption></figure>
       </a>
   </div>
 </section>
@@ -106,21 +109,27 @@
   <div class="team-flex-container" id="team">
     <h1 class="cont-header">our <span class="coloremp">team</span></h1>
     <div class="team-flex-item">
+      <figure>
       <img class="portrait" src="img/portrait1.jpg" alt="">
+      </figure>
       <div class="flex-text-below-portrait">
           <h3>Jack Smith</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
     </div>
     <div class="team-flex-item">
+      <figure>
         <img class="portrait" src="img/portrait4.jpg" alt="">
+      </figure>
         <div class="flex-text-below-portrait">
           <h3>Alice</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
     </div>
     <div class="team-flex-item">
+      <figure>
         <img class="portrait" src="img/portrait5.jpg" alt="">
+      </figure>
         <div class="flex-text-below-portrait">
           <h3>Evelyn</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -145,7 +154,7 @@
   <!---Nav bar for gallery stop--->
 
   <!---Gallery start --->
-  <figure class="gallery">
+  <div class="gallery">
       <img src="gallery/bar.jpg" class="category_item city" alt="city">
       <img src="gallery/basketball.jpg" class="category_item city" alt="city">
       <img src="gallery/forest.jpg" class="category_item nature" alt="nature">
@@ -163,7 +172,7 @@
       <img src="gallery/street2.jpeg" class="category_item city" alt="nature">
       <img src="gallery/various1.jpeg" class="category_item various" alt="nature">
 
-  </figure>
+  </div>
 </section>
   <!---Gallery stop --->
   <!--pricing-container -->

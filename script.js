@@ -1,5 +1,3 @@
-
-
 $(document).ready(function() {
   // sticky nav - start
   $("nav").wrap('<div class="nav-ph"></div>');
@@ -68,12 +66,14 @@ $('.nav-hidden').click(function() {
     alert('yup, its working');
   })
     /*gallery filter stop*/
+
+    $('#burger').click(function() {
+      $('#hidNav').toggle(function() {
+        $("#hidNav").width("100%");
+  });
 });
 
-function openNav() {
-  document.getElementById("hidNav").style.width = "100%";
-}
-
-function closeNav() {
-  document.getElementById("hidNav").style.width = "0%";
-}
+  $('.overlay-cont a').click(function(){
+    $('#hidNav').width("0%");
+  })
+});
