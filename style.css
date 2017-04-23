@@ -276,7 +276,7 @@ width: auto;
      background-color:#00bc8d;
      opacity: 0.7;
   }
-    .button-middle:hover, .button-middle::active {
+    .button-middle:hover, .button-middle:active {
        opacity: 1;
        color: #fff;
     }
