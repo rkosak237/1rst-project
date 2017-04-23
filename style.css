@@ -39,11 +39,14 @@ list-style: none;
   text-align: center;
   padding:15px 10px;
   text-decoration: none;
+  -webkit-transition: .5s;
   transition: .5s;
-  font-size: 16px;
+  -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
-  font-weight: bold;
+  -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
+  font-size: 16px;
+  font-weight: bold;
 }
 .goTop {
   background: #00bc8d;
@@ -68,7 +71,7 @@ list-style: none;
     .nav-list li:first-child {
       padding: 0px 40px 0px 0px;
     }
-      .nav-item:hover {
+      .nav-item:hover, .nav-item:active {
         color: #00bc8d;
         cursor: pointer;
       }
@@ -83,19 +86,20 @@ position: absolute;
 right:5%;
 font-size:250%;
 text-align: center;
-display: none;
 padding: 10px 10px;
 transition: .5s;
+-webkit-transition: .5s;
+display:none;
 
 }
-.burger:hover {
+.burger:hover, .burger:active {
   color: #00bc8d;
   cursor: pointer;
 }
 
 .nav-hidden {
   height:100%;
-  width: 0;
+  width: 100%;
   overflow-x: hidden;
   position: fixed;
   z-index: 1;
@@ -103,6 +107,10 @@ transition: .5s;
   right:0;
   background-color: #fff;
   filter: opacity(0.94);
+  display:none;
+}
+.nav-hidden-active {
+  width:100%;
 }
 
 .nav-hidden a {
@@ -110,13 +118,15 @@ transition: .5s;
   color:#666;
   display: block;
   transition: 0.5s;
+  -webkit-transition: 0.5s;
   text-decoration: none;
   padding:8px;
+  z-index: 1;
 }
-.nav-hidden a:hover {
+.nav-hidden a:hover, a:active {
   color: #00bc8d;
 }
-.closebtn:hover {
+.closebtn:hover, .closebtn:active  {
   color: #00bc8d;
 }
 .closebtn {
@@ -132,6 +142,7 @@ height: 50px;
 line-height: 50px;
 text-align: center;
 transition: 0.5s;
+-webkit-transition: .5s;
 }
 .overlay-cont {
 position: relative;
@@ -259,12 +270,13 @@ width: auto;
      border-radius: 50px;
      color:#fff;
      transition-duration: 0.5s;
+     -webkit-transition-duration: .5s;
      text-align: center;
      position: relative;
      background-color:#00bc8d;
      opacity: 0.7;
   }
-    .button-middle:hover {
+    .button-middle:hover, .button-middle::active {
        opacity: 1;
        color: #fff;
     }
@@ -450,6 +462,7 @@ justify-content: space-around;
       padding: 5px 40px 5px 0px;
       text-transform: uppercase;
       letter-spacing: 3px;
+      -webkit-transition: .5s;
       transition: .5s;
     }
         .first-gal-nav:hover {
@@ -477,12 +490,14 @@ padding-bottom: 40px;
     padding:5px;
     height: 180px;
     width: 240px;
+    -webkit-transition: all 0.5 ease-in-out;
     transition: all 0.5 ease-in-out;
     opacity:0.8;
+    -webkit-transition: 0.5s;
     transition:0.5s;
     justify-content: space-around;
     }
-    .category_item:hover {
+    .category_item:hover, .category_item:active {
     opacity: 1;
     cursor:pointer;
     }
@@ -490,6 +505,7 @@ padding-bottom: 40px;
       transform: scale(0);
       width:0;
       padding:0;
+      -webkit-transition: all 0.5s ease-in-out;
       transition: all 0.5s ease-in-out;
     }
 /*Pricing*/
@@ -602,9 +618,10 @@ width: auto;
       font-size: 16px;
       text-decoration: none;
       color: #fff;
+      -webkit-transition: .5s;
       transition: .5s;
     }
-    .linking:hover {
+    .linking:hover, .linking:active {
       color:#00bc8d;
     }
     .col-3 ul li {
@@ -630,6 +647,7 @@ right:0;
 width:100%;
 background-color: black;
 opacity: 0.8;
+-webkit-transition: top 0.2s ease-in-out;
 transition: top 0.2s ease-in-out;
 }
 .nav-ph {
