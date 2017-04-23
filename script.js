@@ -3,6 +3,7 @@ $(document).ready(function() {
   $("nav").wrap('<div class="nav-ph"></div>');
   $(".nav-ph").height($("nav").outerHeight());
 
+
 var mywindow = $(window);
 var mypos = mywindow.scrollTop();
 var up = false;
@@ -67,13 +68,14 @@ $('.nav-hidden').click(function() {
   })
     /*gallery filter stop*/
 
-    $('#burger').click(function() {
-      $('#hidNav').toggle(function() {
-        $("#hidNav").width("100%");
+//toggle on/off mobile nav and close after click on chosed section
+    $('#burger, .overlay-cont a').click(function() {
+      $(".nav-hidden").toggle();
   });
-});
 
-  $('.overlay-cont a').click(function(){
-    $('#hidNav').width("0%");
-  })
+$('#mix').click(function(){
+  $('.category_item').shuffle();
+});
+var mixPic = [".category_item + ' ''  "]
+
 });
