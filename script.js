@@ -11,19 +11,17 @@ var newscroll;
 mywindow.scroll(function () {
     newscroll = mywindow.scrollTop();
     if (newscroll > mypos && !up) {
-        $("nav").stop().fadeOut();
+        $("nav").stop().fadeOut() && $("#goTop").fadeOut("fast");
         up = !up;
         console.log(up);
     } else if(newscroll < mypos && up) {
-        $("nav").addClass('fixed').fadeIn();
+        $("nav").addClass('fixed').fadeIn() && $("#goTop").fadeIn("slow");
         up = !up;
     }
     mypos = newscroll;
 });
 
-  // sticky nav - stop
-
-  // smooth scroll - start
+  // smooth scroll- start
     $('.nav-item, .nav-hidden a').click(function(e){
        var linkHr = $(this).attr('href');
        var firstSection = $('#main').outerHeight;
@@ -38,19 +36,11 @@ $('.nav-hidden').click(function() {
      // smooth scroll - stop
 
      // fadeOut - start
-  $(window).scroll(function() {
-    if ($(window).scrollTop() >= 200) {
-      $("#goTop").fadeIn("slow");
-    } else {
-      $("#goTop").fadeOut("fast");
-    }
-  });
 
   /**smooth scroll - start**/
   /*gallery filter start*/
   $(".first-gal-nav").click(function(){
     var category = $(this).attr("id")
-
     if (category == "all") {
       $(".category_item").addClass("hide");
       setTimeout(function() {
@@ -62,8 +52,34 @@ $('.nav-hidden').click(function() {
         $("." + category).removeClass("hide");
       }, 300);
     }
-  })
-  $('.button-middle').click(function(){
+
+  });
+
+//shuffle gallery clicking on #mix
+/*$('#mix').click(function() {
+$('.category_item').sort(function(a,b){return Math.round(Math.random())-0.5}).each(function(i) {
+    $(this).delay(i*100).fadeTo('slow',1);
+});
+});
+*/
+$(function() {
+
+  $('#mix').click(function() {
+    $(".gallery img").randomize();
+  });
+
+});
+
+($.fn.randomize = function(selector){
+    (selector ? this.find(selector) : this).parent().each(function(){
+        $(this).children(selector).sort(function(){
+            return Math.random() - 0.5;
+        }).detach().appendTo(this);
+    });
+
+    return this;
+});
+$('.button-middle').click(function(){
     alert('yup, its working');
   })
     /*gallery filter stop*/
@@ -72,10 +88,5 @@ $('.nav-hidden').click(function() {
     $('#burger, .overlay-cont a').click(function() {
       $(".nav-hidden").toggle();
   });
-
-$('#mix').click(function(){
-  $('.category_item').shuffle();
-});
-var mixPic = [".category_item + ' ''  "]
 
 });
