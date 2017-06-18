@@ -13,7 +13,6 @@ mywindow.scroll(function () {
     if (newscroll > mypos && !up) {
         $("nav").stop().fadeOut() && $("#goTop").fadeOut("fast");
         up = !up;
-        console.log(up);
     } else if(newscroll < mypos && up) {
         $("nav").addClass('fixed').fadeIn() && $("#goTop").fadeIn("slow");
         up = !up;
@@ -41,6 +40,11 @@ $('.nav-hidden').click(function() {
   /*gallery filter start*/
   $(".first-gal-nav").click(function(){
     var category = $(this).attr("id")
+
+    /*var random = Math.floor(Math.random() * 1000);
+    var $image = $(".gallery img");
+    $image.eq(random % $image.length).addClass("mix");*/
+
     if (category == "all") {
       $(".category_item").addClass("hide");
       setTimeout(function() {
@@ -54,31 +58,39 @@ $('.nav-hidden').click(function() {
     }
 
   });
+// Shuffle start
+var testAr = ['gallery/bar.jpg', 'gallery/basketball.jpg', 'gallery/forest.jpg', 'gallery/library.jpg', 'gallery/mural.jpg', 'gallery/woods.jpg', 'gallery/street.jpg', 'gallery/forest1.jpg', 'gallery/forest2.jpeg', 'gallery/bw_1.jpg', 'gallery/forest3.jpg', 'gallery/bw_2.jpeg', 'gallery/street1.jpeg', 'gallery/forest4.jpeg', 'gallery/street2.jpeg', 'gallery/various1.jpeg'];
 
-//shuffle gallery clicking on #mix
-/*$('#mix').click(function() {
-$('.category_item').sort(function(a,b){return Math.round(Math.random())-0.5}).each(function(i) {
-    $(this).delay(i*100).fadeTo('slow',1);
-});
-});
-*/
-$(function() {
 
-  $('#mix').click(function() {
-    $(".gallery img").randomize();
+function shuffle() {
+  let randomize = testAr.sort(function() {
+    return 0.5 - Math.random()
   });
+  console.log(randomize);
+  randomize.toString();
+  document.getElementById("gallery").innerHTML = testAr;
+  const spaceAr = testAr.join(", ");
 
-});
+}
 
-($.fn.randomize = function(selector){
-    (selector ? this.find(selector) : this).parent().each(function(){
-        $(this).children(selector).sort(function(){
-            return Math.random() - 0.5;
-        }).detach().appendTo(this);
-    });
+function printOut() {
+  var imgs = "";
 
-    return this;
-});
+      for (var i = 0; i < testAr.length; i++) {
+          var img = document.createElement('img');
+          img.setAttribute('src', testAr[i]);
+          img.setAttribute('class', 'category_item');
+          imgs += img.outerHTML;
+      }
+
+      var container = document.getElementById('gallery');
+      container.innerHTML = imgs;
+}
+
+const btnCheck = document.getElementById('mix').addEventListener('click', shuffle);
+const print = document.getElementById('mix').addEventListener('click', printOut);
+
+// Shuffle stop
 $('.button-middle').click(function(){
     alert('yup, its working');
   })
