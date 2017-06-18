@@ -66,7 +66,6 @@ function shuffle() {
   let randomize = testAr.sort(function() {
     return 0.5 - Math.random()
   });
-  console.log(randomize);
   randomize.toString();
   document.getElementById("gallery").innerHTML = testAr;
   const spaceAr = testAr.join(", ");
