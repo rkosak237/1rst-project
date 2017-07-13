@@ -3,7 +3,7 @@ $(document).ready(function() {
   $("nav").wrap('<div class="nav-ph"></div>');
   $(".nav-ph").height($("nav").outerHeight());
 
-
+// hide nav when user is scrolling down, show when he's scrolling up
 var mywindow = $(window);
 var mypos = mywindow.scrollTop();
 var up = false;
@@ -40,10 +40,6 @@ $('.nav-hidden').click(function() {
   /*gallery filter start*/
   $(".first-gal-nav").click(function(){
     var category = $(this).attr("id")
-
-    /*var random = Math.floor(Math.random() * 1000);
-    var $image = $(".gallery img");
-    $image.eq(random % $image.length).addClass("mix");*/
 
     if (category == "all") {
       $(".category_item").addClass("hide");
