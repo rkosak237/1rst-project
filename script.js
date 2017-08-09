@@ -1,9 +1,11 @@
 $(document).ready(function() {
-  // sticky nav - start
+
+  // container fixing bug of jumping website - when sticky nav is ON
   $("nav").wrap('<div class="nav-ph"></div>');
   $(".nav-ph").height($("nav").outerHeight());
+//start
 
-
+// sticky nav - start
 var mywindow = $(window);
 var mypos = mywindow.scrollTop();
 var up = false;
@@ -19,6 +21,7 @@ mywindow.scroll(function () {
     }
     mypos = newscroll;
 });
+// sticky nav - stop
 
   // smooth scroll- start
     $('.nav-item, .nav-hidden a').click(function(e){
@@ -34,10 +37,7 @@ $('.nav-hidden').click(function() {
 });
      // smooth scroll - stop
 
-     // fadeOut - start
-
-  /**smooth scroll - start**/
-  /*gallery filter start*/
+  //gallery filter start
   $(".first-gal-nav").click(function(){
     var category = $(this).attr("id")
     if (category == "all") {
@@ -53,12 +53,12 @@ $('.nav-hidden').click(function() {
     }
 
   });
+//gallery filter stop
 
-// Shuffle stop
+
 $('.card-btn-cta').click(function(){
     alert('yup, its working');
   })
-    /*gallery filter stop*/
 
 //toggle on/off mobile nav and close after click on chosed section
     $('#burger, .overlay-cont a').click(function() {
