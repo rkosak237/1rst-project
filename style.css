@@ -564,11 +564,9 @@ justify-content: space-around;
       padding: 10px 0;
       position: relative;
       left:-20px;
-
     }
   .price {
     font-size: 63px;
-    font-family: "Lato";
   }
 
 /*Footer*/
