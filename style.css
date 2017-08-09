@@ -491,6 +491,10 @@ justify-content: space-around;
   margin-bottom: 1%;
   padding-bottom: 30px;
 }
+.pricing > * {
+  color:#666;
+}
+
   .card-price-top {
     text-align: center;
   }
