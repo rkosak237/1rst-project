@@ -168,6 +168,9 @@ display:none;
   cursor: pointer;
 }
 
+button {
+  border:none;
+}
 
 /*first container with CTA - start*/
 .first-section {
@@ -179,7 +182,7 @@ position: relative;
   position: absolute;
   width: 100%;
   height:100%;
-  background-image: url("gallery/csp.jpg");
+  background-image: url("img/gallery/csp.jpg");
   filter: brightness(40%);
   background-position: center;
   background-size: cover;
@@ -621,7 +624,6 @@ z-index:500px;
 }
 
 
-/* media queries start*/
 @media only screen and (max-width: 480px) {
   .first-gal-nav {
     width: 100%;
